@@ -35,7 +35,7 @@ export default function ReferralProgramSection() {
                 />
               </div>
             </div>
-            <div className="flex w-full flex-col gap-[60px] rounded-[20px] bg-dark-0 p-10 shadow-sm max-[550px]:gap-[30px] max-[550px]:p-4">
+            {/* <div className="flex w-full flex-col gap-[60px] rounded-[20px] bg-dark-0 p-10 shadow-sm max-[550px]:gap-[30px] max-[550px]:p-4">
               <div className="flex flex-col items-start gap-2.5">
                 <Text
                   size="visa_desktop_headers_h3"
@@ -99,6 +99,59 @@ export default function ReferralProgramSection() {
                   </Text>
                 </div>
               </div>
+            </div> */}
+            <div className="flex w-full flex-col gap-[60px] rounded-[20px] bg-dark-0 p-10 shadow-md max-[550px]:gap-[30px] max-[550px]:p-4">
+              <div className="flex flex-col items-start gap-2.5">
+                <Text
+                  size="visa_desktop_headers_h3"
+                  as="p"
+                  className="!text-white-0 text-3xl md:text-5xl "
+                >
+                  Generate Referral Link
+                </Text>
+                <Text
+                  size="iopn_desktop_body_text_20"
+                  as="p"
+                  className="w-[86%] leading-[140%] !text-white-3 max-[1440px]:w-full max-[1050px]:w-full max-[550px]:text-sm"
+                >
+                  Share your unique referral link and earn IOPn tokens for every
+                  friend who joins through your link.
+                </Text>
+              </div>
+              <div className="mb-1.5 flex flex-col gap-4 ">
+                <label class="gap-4 !rounded-[34px] !text-white-1 shadow-xl max-[550px]:text-[14px] bg-slate-600 flex items-center justify-center cursor-text border-blue-900_1e border border-solid  rounded-[36px] h-[68px] pl-[26px] pr-[12px] text-[20px]">
+                  <input type="text" name="Edit URL" placeholder="https://iopn.io/gkiyfujytdhtsrsytdr" value="https://iopn.io/gkiyfujytdhtsrsytdr" />
+                  <div class="flex h-[36px] w-[36px] items-center justify-center rounded-[50%] bg-dark-0">
+                    <img class="h-[28px] w-[18px]" src="images/img_arrowleft_white_0.svg" alt="Arrow Left" loading="lazy" />
+                  </div>
+                </label>
+                <div className="flex flex-col gap-3">
+                  <Button
+                    shape="round"
+                    color="undefined_undefined"
+                    rightIcon={
+                      <div className="flex h-[36px] w-[36px] items-center justify-center rounded-[50%] bg-white-0 absolute right-[10px]">
+                        <Img
+                          src="images/img_arrowleft.svg"
+                          alt="Arrow Left"
+                          className="h-[18px] w-[18px]"
+                        />
+                      </div>
+                    }
+                    className="gap-[34px] self-stretch font-medium capitalize text-white-0 border border-solid border-slate-100 relative"
+                  >
+                    Generate referral link
+                  </Button>
+                  <Text
+                    as="p"
+                    className="text-center leading-[130%] !text-white-4 max-[550px]:text-xs"
+                  >
+                    *Copy this link and share it witch other people to nvite
+                    your network to embark on this exciting journey with you and
+                    watch your token balance grow.
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex gap-4 max-[1050px]:flex-col">
@@ -112,17 +165,17 @@ export default function ReferralProgramSection() {
                 <div className="flex flex-col items-start gap-[30px]">
                   <Button
                     size="xs"
-                    className="min-w-[134px] rounded-[18px] font-medium uppercase"
+                    className="flex rounded-[18px] border border-solid border-dark-0 p-1.5"
                   >
                     Get started
                   </Button>
                   <Text
                     size="visa_desktop_headers_h2"
                     as="p"
-                    className="w-full leading-[105%] max-[1440px]:text-[48px]"
+                    className="w-full leading-[105%] text-3xl md:text-5xl"
                   >
                     <>
-                      Ready to Invest in
+                      Ready to Invest In
                       <br />
                       Your Future?
                     </>
